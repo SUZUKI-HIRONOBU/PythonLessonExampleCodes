@@ -1,1 +1,4 @@
 # PythonLessonExampleCodes
+
+- Pythonのサンプルコード集
+  
