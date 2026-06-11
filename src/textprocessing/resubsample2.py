@@ -9,7 +9,7 @@ import re
 
 with open('text01.txt',encoding='utf-8') as f:
 	text = f.read()
-	pre_text=re.sub("《[あ-ん]*》","",text)
+	pre_text=re.sub("《[あ-ん]+》","",text)
 	speaks=re.findall("「.*?」",pre_text) # 最小マッチ
 	for t in speaks:
 		print(t)

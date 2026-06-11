@@ -9,5 +9,5 @@ import re
 
 with open('text01.txt',encoding='utf-8') as f:
 	text = f.read()
-	print(re.sub(r"《[あ-ん]*》","【削除】",text))
+	print(re.sub(r"《[あ-ん]+》","【削除】",text))
 
