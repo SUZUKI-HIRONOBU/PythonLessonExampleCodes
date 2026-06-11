@@ -1,0 +1,10 @@
+##  File: netconf.yaml
+#
+Server:
+  AllowIP: 0.0.0.0
+  Port: 54321
+
+Client:
+  ServerIP: 127.0.0.1
+  ServerPort: 54321
+
