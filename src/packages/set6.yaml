@@ -1,0 +1,14 @@
+##  File: set6.yaml
+## マッピングした要素がマッピングした値
+Time_Setting_1: {
+    hour: 12,
+    min:  30,
+    sec:  15
+}
+
+Time_Setting_2: {
+    hour: 18,
+    min:  30,
+    sec:  00
+}
+
