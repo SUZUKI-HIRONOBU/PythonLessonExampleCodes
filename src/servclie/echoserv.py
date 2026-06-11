@@ -19,7 +19,9 @@ class LocalTCPHandler(socketserver.BaseRequestHandler):
         print(os.getpid())            # 自分のPID
         while True:
             try:
-                self.data = self.request.recv(1024)
+	        self.data = self.request.recv(1024)
+                if ( len(self.data) < 1 ):
+                   self.finish(self)
                 print(self.data.decode('UTF-8'),end='')
                 self.request.sendall(self.data)
             except:
